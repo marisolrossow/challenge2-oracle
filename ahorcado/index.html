@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale= 1.0, maximum-scale = 1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Challenge 2 - Oracle</title>
+    <!-- Link a google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class = "contenedor">
+      <section class= "comienzo">
+     
+        <div style="text-align:center; margin: 3px 0px;">
+          <h1 class="titulo">Juego Ahorcado</h1>
+          <button class="btn" id="iniciar-juego">Iniciar juego</button>
+        </div>
+        <div style="text-align:center">
+          <input class="text-input" type="text" id="input-nueva-palabra" maxlength = "8" placeholder="Escriba una nueva palabra">
+          <button class="btn" id="nueva-palabra" >Agregar palabra</button> 
+        </div>
+      </section>
+    
+    
+      
+      <div id = "areaJuego" style="text-align:center;">
+        <canvas id="ahorcado" height="400px" width="800px"></canvas>
+        
+      
+          <div class ="mensaje" >
+            <button class="btn" id="reiniciar-juego" onclick="location.reload()">Nuevo juego</button>
+            <div id= "palabraSecreta"></div>
+            <h2 id= "tituloLetras" ></h2>
+            <div id= "letrasError"></div>
+            <div id="vidas"></div>
+            
+        
+
+          </div>
+        <div id= "resultadoGanador"></div>
+        <div id= "resultadoPerdedor"></div>
+      </div>  
+    </main>
+
+    <footer class="reservado">
+      <p> &copy; 2022
+         <a href="https://www.linkedin.com/in/marisol-rossow-861a4a229/"> <b> Marisol Rossow </b></a>
+        - Todos los derechos reservados</p>
+  </footer>
+     
+    
+    <script type="text/javascript" src="canvas.js"></script>
+    <script type="text/javascript" src="ahorcado.js"></script>
+    <script type="text/javascript" src="palabraIngresada.js"></script>
+    <script type="text/javascript" src="letraIngresada.js"></script>
+
+  </body>
+</html>
